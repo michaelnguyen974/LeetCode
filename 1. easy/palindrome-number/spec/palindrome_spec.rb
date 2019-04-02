@@ -16,4 +16,9 @@ RSpec.describe Palindrome do
     palindrome = Palindrome.new 
     expect(palindrome.is_palindrome(10)).to eq(false)
   end
+
+  it("input or a larger palindrome returns true") do
+    palindrome = Palindrome.new 
+    expect(palindrome.is_palindrome(122221)).to eq(true)
+  end
 end 
