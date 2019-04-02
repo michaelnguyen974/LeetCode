@@ -2,7 +2,8 @@ require 'palindrome.rb'
 
 RSpec.describe Palindrome do 
 
-  it("true is true") do 
-    expect(true).to eq(true)
+  it("input of 121 returns true as it is a palindrome") do 
+    palindrome = Palindrome.new 
+    expect(palindrome.is_palindrome(121)).to eq(true)
   end
 end 
