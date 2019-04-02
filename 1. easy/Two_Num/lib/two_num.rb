@@ -1,14 +1,14 @@
 class Solution 
 
-  def two_num(array_of_nums, target)
-    array = []
-    if array_of_nums.reduce(0){|sum, num| sum + num} === target 
-      array_of_nums.each_with_index do |number, index|
-        array.push(index)
+  def two_num(nums, target)
+    dict = {}
+    nums.each_with_index do |n, i|
+      p dict
+      if dict[target - n]  
+        return dict[target - n], i
       end
+      dict[n] = i
     end
-    return array
-
   end
 
 end
