@@ -1,12 +1,12 @@
 class Solution 
 
   def two_num(nums, target)
-    dict = {}
+    hash = {}
     nums.each_with_index do |n, i|
-      if dict[target - n]  
-        return dict[target - n], i
+      if hash[target - n] 
+        return hash[target - n], i
       end
-      dict[n] = i
+      hash[n] = i
     end
   end
 
