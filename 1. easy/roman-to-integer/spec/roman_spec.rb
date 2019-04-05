@@ -50,4 +50,9 @@ RSpec.describe Solution do
     solution = Solution.new
     expect(solution.roman_to_int(4)).to eq("IV")
   end
+
+  it("input of 9 will give IX") do 
+    solution = Solution.new
+    expect(solution.roman_to_int(9)).to eq("IX")
+  end
 end
