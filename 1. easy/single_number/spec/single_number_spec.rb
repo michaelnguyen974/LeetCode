@@ -2,7 +2,8 @@ require 'single_number.rb'
 
 RSpec.describe Solution do 
 
-  it("true is true") do 
-    expect(true).to eq(true)
+  it("returns 1 number from a set of repeated integers") do 
+    solution = Solution.new
+    expect(solution.single_number([2,2,1])).to eq([1])
   end
 end
